@@ -1,0 +1,8 @@
+body {
+  background: gray;
+  height: 100vh;
+}
+
+.title {
+  text-decoration: underline;
+}

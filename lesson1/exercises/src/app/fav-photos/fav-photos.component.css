@@ -1,9 +1,13 @@
+.photos {
+   border: dotted 2px black;
+}
+
 h3 {
    color: brown;
 }
 
 img {
- width: 200px;
+ width: 100px;
 }
 
 .photos {
