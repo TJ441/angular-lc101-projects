@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./crew.component.css']
 })
 export class CrewComponent {
-
+  crew: string[] = ["Jessica Watkins", "Raja Chari", "Jasmin Moghbeli"]
 }
