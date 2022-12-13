@@ -13,3 +13,19 @@
     </ul>
 </div>
 <hr>
+<div>
+    <img *ngIf = "finishedChores.length - 3 >= chores.length; else noAllowance" src="{{targetImage}}" alt="Oops! Missing photo!">
+    <ng-template #noAllowance>
+        No allowance!
+    </ng-template>
+
+    <h1 *ngIf = "chores.length === 0 && finishedChores.length >= 4; else howTo">Ice cream treat!</h1>
+    <ng-template #howTo>
+      <h3>How to earn ice cream</h3>
+      <ul>
+        <li>Get a job</li>
+        <li>Rob a bank</li>
+        <li>Prostitute yourself</li>
+      </ul>
+    </ng-template>
+</div>
