@@ -4,7 +4,7 @@
        <li *ngFor ="let movie of movies">{{movie}}</li>
     </ol>
     <hr>
-    <input #newMovie (keyup.enter)='true' type="text" placeholder="Enter Movie Title Here"/>
-    <button newMovie (click)="true">Add</button>
-    <p>{{newMovie.value}}</p>
+    <input #newMovie (keyup.enter)="a = addMovie(newMovie.value); newMovie.value = ''" type="text" placeholder="Enter Movie Title Here"/>
+    <button (click)="a = addMovie(newMovie.value); newMovie.value = ''">Add</button>
+    <p class = "error" *ngIf = "a">{{a}}</p>
 </div>
