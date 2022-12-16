@@ -75,8 +75,10 @@ export class AppComponent {
   }
 
   warnAtLimits() {
-    if (this.width < -10000 || this.width > 160000 || this.height > 330000)
+    if (this.width < -10000 || this.width > 160000 || this.height > 330000 || this.height < 20000) {
       this.color = 'red';
-    else this.color = 'blue'
+    } else {
+        this.color = 'blue'
+    }
   }
 }
